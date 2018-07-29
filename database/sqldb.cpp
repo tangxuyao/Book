@@ -23,3 +23,8 @@ bool SqlDB::open()
 
     return true;
 }
+
+void SqlDB::close()
+{
+    database.close();
+}

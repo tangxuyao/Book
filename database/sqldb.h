@@ -10,6 +10,10 @@ class SqlDB
 public:
     SqlDB();
 
+public:
+    bool open();
+    void close();
+
 private:
     QSqlDatabase database;
 };
