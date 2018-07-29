@@ -22,16 +22,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+# 引入sqlite
+QT += sql
+
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
     signindialog.cpp \
-    recentform.cpp
+    recentform.cpp \
+    database/sqldb.cpp
 
 HEADERS += \
     mainwindow.h \
     signindialog.h \
-    recentform.h
+    recentform.h \
+    database/sqldb.h
 
 FORMS += \
     mainwindow.ui \
